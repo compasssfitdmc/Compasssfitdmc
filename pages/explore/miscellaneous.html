@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous | TD Medical College, Alappuzha</title>
+  <link rel="icon" type="image/jpeg" href="../../images/logo_updated.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="../../index.html" class="nav-brand">
+      <img src="../../images/logo_updated.jpeg" alt="TD Medical College Logo">
+      <div class="nav-brand-text">
+        <span class="brand-name">TD Medical College</span>
+        <span class="brand-sub">Alappuzha</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../../index.html">Home</a>
+      <a href="../../pages/campus/index.html">Campus</a>
+      <a href="../../pages/hostel/index.html">Hostel</a>
+      <a href="../../pages/academics/index.html">Academics</a>
+      <a href="../../pages/explore/index.html">Explore</a>
+      <a href="../../pages/contact.html">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero -->
+  <section class="hero-mini" style="position: relative; padding-top: calc(var(--navbar-height, 72px) + 2rem); padding-bottom: 3rem; background: linear-gradient(135deg, #1c2b1e 0%, #0d170e 100%); text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div class="hero-content" style="margin-left: 0; max-width: 800px; width: 90%;">
+      <span class="hero-subtitle" style="display: block; color: var(--clr-gold); letter-spacing: 2px;">GALLERY</span>
+      <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Miscellaneous</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Akshaya centre</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub0" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Akshaya centre/WhatsApp%20Image%202026-08-02%20at%201.37.18%20PM.jpeg" alt="Akshaya centre image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Akshaya centre')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub0(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub0(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/Akshaya centre/WhatsApp%20Image%202026-08-02%20at%201.37.18%20PM.jpeg" class="thumb-item_sub0" onclick="goToSlide_sub0(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub0 = 0;
+    const totalSlides_sub0 = 1;
+    function updateCarousel_sub0() {
+      const track = document.getElementById('carouselTrack_sub0');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub0 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub0');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub0) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub0(direction) {
+      currentSlide_sub0 = (currentSlide_sub0 + direction + totalSlides_sub0) % totalSlides_sub0;
+      updateCarousel_sub0();
+    }
+    function goToSlide_sub0(index) {
+      currentSlide_sub0 = index;
+      updateCarousel_sub0();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>gym</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub1" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/gym/WhatsApp%20Image%202026-08-02%20at%201.37.24%20PM.jpeg" alt="gym image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'gym')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/gym/WhatsApp%20Image%202026-08-02%20at%201.37.25%20PM.jpeg" alt="gym image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'gym')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub1(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub1(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/gym/WhatsApp%20Image%202026-08-02%20at%201.37.24%20PM.jpeg" class="thumb-item_sub1" onclick="goToSlide_sub1(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/gym/WhatsApp%20Image%202026-08-02%20at%201.37.25%20PM.jpeg" class="thumb-item_sub1" onclick="goToSlide_sub1(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub1 = 0;
+    const totalSlides_sub1 = 2;
+    function updateCarousel_sub1() {
+      const track = document.getElementById('carouselTrack_sub1');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub1 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub1');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub1) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub1(direction) {
+      currentSlide_sub1 = (currentSlide_sub1 + direction + totalSlides_sub1) % totalSlides_sub1;
+      updateCarousel_sub1();
+    }
+    function goToSlide_sub1(index) {
+      currentSlide_sub1 = index;
+      updateCarousel_sub1();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hotels or restaurants</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub2" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.06%20PM.jpeg" alt="Hotels or restaurants image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.07%20PM.jpeg" alt="Hotels or restaurants image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.08%20PM.jpeg" alt="Hotels or restaurants image 3"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.12%20PM%20(1).jpeg" alt="Hotels or restaurants image 4"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.12%20PM.jpeg" alt="Hotels or restaurants image 5"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM%20(1).jpeg" alt="Hotels or restaurants image 6"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM%20(2).jpeg" alt="Hotels or restaurants image 7"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM.jpeg" alt="Hotels or restaurants image 8"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(1).jpeg" alt="Hotels or restaurants image 9"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(2).jpeg" alt="Hotels or restaurants image 10"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(3).jpeg" alt="Hotels or restaurants image 11"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM.jpeg" alt="Hotels or restaurants image 12"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.15%20PM%20(1).jpeg" alt="Hotels or restaurants image 13"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.15%20PM.jpeg" alt="Hotels or restaurants image 14"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM%20(1).jpeg" alt="Hotels or restaurants image 15"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM%20(2).jpeg" alt="Hotels or restaurants image 16"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM.jpeg" alt="Hotels or restaurants image 17"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.17%20PM%20(1).jpeg" alt="Hotels or restaurants image 18"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.17%20PM.jpeg" alt="Hotels or restaurants image 19"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(1).jpeg" alt="Hotels or restaurants image 20"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(2).jpeg" alt="Hotels or restaurants image 21"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM.jpeg" alt="Hotels or restaurants image 22"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(1).jpeg" alt="Hotels or restaurants image 23"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(2).jpeg" alt="Hotels or restaurants image 24"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(3).jpeg" alt="Hotels or restaurants image 25"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM.jpeg" alt="Hotels or restaurants image 26"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM%20(1).jpeg" alt="Hotels or restaurants image 27"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM%20(2).jpeg" alt="Hotels or restaurants image 28"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM.jpeg" alt="Hotels or restaurants image 29"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM%20(1).jpeg" alt="Hotels or restaurants image 30"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM%20(2).jpeg" alt="Hotels or restaurants image 31"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM.jpeg" alt="Hotels or restaurants image 32"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM%20(1).jpeg" alt="Hotels or restaurants image 33"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM%20(2).jpeg" alt="Hotels or restaurants image 34"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM.jpeg" alt="Hotels or restaurants image 35"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.23%20PM%20(1).jpeg" alt="Hotels or restaurants image 36"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.23%20PM.jpeg" alt="Hotels or restaurants image 37"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.24%20PM.jpeg" alt="Hotels or restaurants image 38"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Hotels or restaurants')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub2(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub2(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.06%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.07%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.08%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(2)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.12%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(3)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.12%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(4)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(5)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(6)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.13%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(7)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(8)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(9)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM%20(3).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(10)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.14%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(11)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.15%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(12)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.15%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(13)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(14)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(15)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.16%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(16)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.17%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(17)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.17%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(18)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(19)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(20)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(21)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(22)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(23)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM%20(3).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(24)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.19%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(25)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(26)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(27)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.20%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(28)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(29)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(30)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.21%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(31)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(32)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM%20(2).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(33)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.22%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(34)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.23%20PM%20(1).jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(35)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.23%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(36)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Hotels or restaurants/WhatsApp%20Image%202026-08-02%20at%201.39.24%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(37)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub2 = 0;
+    const totalSlides_sub2 = 38;
+    function updateCarousel_sub2() {
+      const track = document.getElementById('carouselTrack_sub2');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub2 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub2');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub2) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub2(direction) {
+      currentSlide_sub2 = (currentSlide_sub2 + direction + totalSlides_sub2) % totalSlides_sub2;
+      updateCarousel_sub2();
+    }
+    function goToSlide_sub2(index) {
+      currentSlide_sub2 = index;
+      updateCarousel_sub2();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub3" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" alt="KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub3(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub3(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" class="thumb-item_sub3" onclick="goToSlide_sub3(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub3 = 0;
+    const totalSlides_sub3 = 1;
+    function updateCarousel_sub3() {
+      const track = document.getElementById('carouselTrack_sub3');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub3 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub3');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub3) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub3(direction) {
+      currentSlide_sub3 = (currentSlide_sub3 + direction + totalSlides_sub3) % totalSlides_sub3;
+      updateCarousel_sub3();
+    }
+    function goToSlide_sub3(index) {
+      currentSlide_sub3 = index;
+      updateCarousel_sub3();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>KSRTC Depo</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub4" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/KSRTC Depo/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" alt="KSRTC Depo image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'KSRTC Depo')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub4(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub4(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/KSRTC Depo/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" class="thumb-item_sub4" onclick="goToSlide_sub4(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub4 = 0;
+    const totalSlides_sub4 = 1;
+    function updateCarousel_sub4() {
+      const track = document.getElementById('carouselTrack_sub4');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub4 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub4');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub4) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub4(direction) {
+      currentSlide_sub4 = (currentSlide_sub4 + direction + totalSlides_sub4) % totalSlides_sub4;
+      updateCarousel_sub4();
+    }
+    function goToSlide_sub4(index) {
+      currentSlide_sub4 = index;
+      updateCarousel_sub4();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>medical stores</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub5" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/medical stores/WhatsApp%20Image%202026-08-02%20at%201.39.10%20PM%20(1).jpeg" alt="medical stores image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'medical stores')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/medical stores/WhatsApp%20Image%202026-08-02%20at%201.39.10%20PM.jpeg" alt="medical stores image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'medical stores')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub5(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub5(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/medical stores/WhatsApp%20Image%202026-08-02%20at%201.39.10%20PM%20(1).jpeg" class="thumb-item_sub5" onclick="goToSlide_sub5(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/medical stores/WhatsApp%20Image%202026-08-02%20at%201.39.10%20PM.jpeg" class="thumb-item_sub5" onclick="goToSlide_sub5(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub5 = 0;
+    const totalSlides_sub5 = 2;
+    function updateCarousel_sub5() {
+      const track = document.getElementById('carouselTrack_sub5');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub5 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub5');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub5) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub5(direction) {
+      currentSlide_sub5 = (currentSlide_sub5 + direction + totalSlides_sub5) % totalSlides_sub5;
+      updateCarousel_sub5();
+    }
+    function goToSlide_sub5(index) {
+      currentSlide_sub5 = index;
+      updateCarousel_sub5();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>police station</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub6" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/police station/WhatsApp%20Image%202026-08-02%20at%201.37.18%20PM.jpeg" alt="police station image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'police station')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub6(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub6(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/police station/WhatsApp%20Image%202026-08-02%20at%201.37.18%20PM.jpeg" class="thumb-item_sub6" onclick="goToSlide_sub6(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub6 = 0;
+    const totalSlides_sub6 = 1;
+    function updateCarousel_sub6() {
+      const track = document.getElementById('carouselTrack_sub6');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub6 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub6');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub6) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub6(direction) {
+      currentSlide_sub6 = (currentSlide_sub6 + direction + totalSlides_sub6) % totalSlides_sub6;
+      updateCarousel_sub6();
+    }
+    function goToSlide_sub6(index) {
+      currentSlide_sub6 = index;
+      updateCarousel_sub6();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Railway station</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub7" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Railway station/WhatsApp%20Image%202026-08-02%20at%201.37.16%20PM.jpeg" alt="Railway station image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Railway station')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Railway station/WhatsApp%20Image%202026-08-02%20at%201.37.23%20PM.jpeg" alt="Railway station image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Railway station')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub7(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub7(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/Railway station/WhatsApp%20Image%202026-08-02%20at%201.37.16%20PM.jpeg" class="thumb-item_sub7" onclick="goToSlide_sub7(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Railway station/WhatsApp%20Image%202026-08-02%20at%201.37.23%20PM.jpeg" class="thumb-item_sub7" onclick="goToSlide_sub7(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub7 = 0;
+    const totalSlides_sub7 = 2;
+    function updateCarousel_sub7() {
+      const track = document.getElementById('carouselTrack_sub7');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub7 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub7');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub7) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub7(direction) {
+      currentSlide_sub7 = (currentSlide_sub7 + direction + totalSlides_sub7) % totalSlides_sub7;
+      updateCarousel_sub7();
+    }
+    function goToSlide_sub7(index) {
+      currentSlide_sub7 = index;
+      updateCarousel_sub7();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>saloon</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub8" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/saloon/WhatsApp%20Image%202026-08-02%20at%201.37.20%20PM.jpeg" alt="saloon image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'saloon')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/saloon/WhatsApp%20Image%202026-08-02%20at%201.37.23%20PM.jpeg" alt="saloon image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'saloon')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub8(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub8(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/saloon/WhatsApp%20Image%202026-08-02%20at%201.37.20%20PM.jpeg" class="thumb-item_sub8" onclick="goToSlide_sub8(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/saloon/WhatsApp%20Image%202026-08-02%20at%201.37.23%20PM.jpeg" class="thumb-item_sub8" onclick="goToSlide_sub8(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub8 = 0;
+    const totalSlides_sub8 = 2;
+    function updateCarousel_sub8() {
+      const track = document.getElementById('carouselTrack_sub8');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub8 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub8');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub8) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub8(direction) {
+      currentSlide_sub8 = (currentSlide_sub8 + direction + totalSlides_sub8) % totalSlides_sub8;
+      updateCarousel_sub8();
+    }
+    function goToSlide_sub8(index) {
+      currentSlide_sub8 = index;
+      updateCarousel_sub8();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>SBI Bank</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub9" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/SBI Bank/WhatsApp%20Image%202026-08-02%20at%201.37.19%20PM.jpeg" alt="SBI Bank image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'SBI Bank')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub9(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub9(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/SBI Bank/WhatsApp%20Image%202026-08-02%20at%201.37.19%20PM.jpeg" class="thumb-item_sub9" onclick="goToSlide_sub9(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub9 = 0;
+    const totalSlides_sub9 = 1;
+    function updateCarousel_sub9() {
+      const track = document.getElementById('carouselTrack_sub9');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub9 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub9');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub9) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub9(direction) {
+      currentSlide_sub9 = (currentSlide_sub9 + direction + totalSlides_sub9) % totalSlides_sub9;
+      updateCarousel_sub9();
+    }
+    function goToSlide_sub9(index) {
+      currentSlide_sub9 = index;
+      updateCarousel_sub9();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stores, shops and malls</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub10" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM%20(1).jpeg" alt="Stores, shops and malls image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM%20(2).jpeg" alt="Stores, shops and malls image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM.jpeg" alt="Stores, shops and malls image 3"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(2).jpeg" alt="Stores, shops and malls image 4"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.51%20PM.jpeg" alt="Stores, shops and malls image 5"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.81%20PM%20(1).jpeg" alt="Stores, shops and malls image 6"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.22%20AM.jpeg" alt="Stores, shops and malls image 7"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.23%20AM%20(1).jpeg" alt="Stores, shops and malls image 8"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.23%20AM.jpeg" alt="Stores, shops and malls image 9"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.00.20%20AM.jpeg" alt="Stores, shops and malls image 10"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.01.10%20AM.jpeg" alt="Stores, shops and malls image 11"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.01.52%20AM.jpeg" alt="Stores, shops and malls image 12"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.02.38%20AM.jpeg" alt="Stores, shops and malls image 13"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Stores, shops and malls')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub10(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub10(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM%20(1).jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM%20(2).jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.11%20PM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(2)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.18%20PM%20(2).jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(3)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.51%20PM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(4)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%201.39.81%20PM%20(1).jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(5)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.22%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(6)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.23%20AM%20(1).jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(7)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%208.59.23%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(8)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.00.20%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(9)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.01.10%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(10)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.01.52%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(11)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/miscellaneous/Stores, shops and malls/WhatsApp%20Image%202026-08-02%20at%209.02.38%20AM.jpeg" class="thumb-item_sub10" onclick="goToSlide_sub10(12)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub10 = 0;
+    const totalSlides_sub10 = 13;
+    function updateCarousel_sub10() {
+      const track = document.getElementById('carouselTrack_sub10');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub10 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub10');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub10) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub10(direction) {
+      currentSlide_sub10 = (currentSlide_sub10 + direction + totalSlides_sub10) % totalSlides_sub10;
+      updateCarousel_sub10();
+    }
+    function goToSlide_sub10(index) {
+      currentSlide_sub10 = index;
+      updateCarousel_sub10();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>theater - Pan cinemas Alappuzha</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub11_0" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/theater/Pan cinemas Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.21%20PM.jpeg" alt="theater - Pan cinemas Alappuzha image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'theater - Pan cinemas Alappuzha')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub11_0(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub11_0(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/theater/Pan cinemas Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.21%20PM.jpeg" class="thumb-item_sub11_0" onclick="goToSlide_sub11_0(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub11_0 = 0;
+    const totalSlides_sub11_0 = 1;
+    function updateCarousel_sub11_0() {
+      const track = document.getElementById('carouselTrack_sub11_0');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub11_0 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub11_0');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub11_0) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub11_0(direction) {
+      currentSlide_sub11_0 = (currentSlide_sub11_0 + direction + totalSlides_sub11_0) % totalSlides_sub11_0;
+      updateCarousel_sub11_0();
+    }
+    function goToSlide_sub11_0(index) {
+      currentSlide_sub11_0 = index;
+      updateCarousel_sub11_0();
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>theater - Raiban theatre alleppy</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub11_1" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/theater/Raiban theatre alleppy/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" alt="theater - Raiban theatre alleppy image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'theater - Raiban theatre alleppy')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub11_1(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub11_1(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/theater/Raiban theatre alleppy/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" class="thumb-item_sub11_1" onclick="goToSlide_sub11_1(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub11_1 = 0;
+    const totalSlides_sub11_1 = 1;
+    function updateCarousel_sub11_1() {
+      const track = document.getElementById('carouselTrack_sub11_1');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub11_1 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub11_1');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub11_1) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub11_1(direction) {
+      currentSlide_sub11_1 = (currentSlide_sub11_1 + direction + totalSlides_sub11_1) % totalSlides_sub11_1;
+      updateCarousel_sub11_1();
+    }
+    function goToSlide_sub11_1(index) {
+      currentSlide_sub11_1 = index;
+      updateCarousel_sub11_1();
+    }
+  </script>
+
+  <!-- Modal Lightbox for Selected Photo -->
+  <div id="imageModal"
+    style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;">
+    <span onclick="closeModal()"
+      style="position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;">&times;</span>
+    <img id="modalImg" src="" alt="Enlarged view"
+      style="max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);">
+    <p id="modalCaption" style="color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;"></p>
+  </div>
+  
+  <script>
+    function openModal(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').innerText = caption;
+      document.getElementById('imageModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <h4>TD Medical College</h4>
+        <p>A premier institution of medical education in Alappuzha, Kerala.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="../../index.html">Home</a>
+          <a href="../../pages/campus/index.html">Campus</a>
+          <a href="../../pages/hostel/index.html">Hostel</a>
+          <a href="../../pages/academics/index.html">Academics</a>
+          <a href="../../pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TD Medical College, Alappuzha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/navbar.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

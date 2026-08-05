@@ -262,8 +262,9 @@ p {
 
 /* --- Navigation Cards --- */
 .nav-card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-md);
 }
 
@@ -271,9 +272,11 @@ p {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  aspect-ratio: 4/3;
   cursor: pointer;
   transition: transform var(--transition-med), box-shadow var(--transition-med);
+  flex: 1 1 260px;
+  max-width: 320px;
+  min-height: 160px;
 }
 
 .nav-card:hover {
@@ -314,8 +317,8 @@ p {
 }
 
 .nav-card-overlay .card-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   background: var(--clr-gold);
   border-radius: var(--radius-full);
   display: flex;
@@ -323,7 +326,7 @@ p {
   justify-content: center;
   margin-bottom: var(--space-xs);
   color: var(--clr-bg-primary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: transform var(--transition-fast);
 }
 
@@ -332,7 +335,7 @@ p {
 }
 
 .nav-card-overlay h3 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin-bottom: 4px;
 }
 
