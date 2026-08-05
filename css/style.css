@@ -480,13 +480,29 @@ p {
 }
 
 .facility-item {
-  display: flex;
-  gap: var(--space-sm);
+  display: grid;
+
+  /* icon on left, content on right */
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-areas:
+    "icon title"
+    "icon description";
+
+  column-gap: var(--space-sm);
+  row-gap: 6px;
+
   padding: var(--space-md);
   background: var(--clr-bg-card);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  align-items: start;
+  min-width: 0;
+  overflow: hidden;
+
+  transition:
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .facility-item:hover {
@@ -494,22 +510,54 @@ p {
   transform: translateY(-4px);
 }
 
+/* Icon */
 .facility-item .facility-icon {
+  grid-area: icon;
+
   width: 48px;
   height: 48px;
+
   background: rgba(200, 164, 90, 0.1);
   border-radius: var(--radius-full);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: var(--clr-gold);
   font-size: 1.2rem;
+
   flex-shrink: 0;
 }
 
-.facility-item h4 { margin-bottom: 4px; }
-.facility-item p { font-size: 0.85rem; max-width: 100%; }
+/* Facility title */
+.facility-item h3 {
+  grid-area: title;
 
+  margin: 2px 0 0;
+  padding: 0;
+
+  font-size: 1.25rem;
+  line-height: 1.25;
+
+  min-width: 0;
+}
+
+/* Facility description */
+.facility-item p {
+  grid-area: description;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+
+  max-width: 100%;
+  min-width: 0;
+
+  overflow-wrap: break-word;
+}
 /* --- FAQ Accordion --- */
 .faq-list {
   max-width: 800px;
