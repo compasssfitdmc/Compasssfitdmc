@@ -9,11 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="../../css/navbar.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/footer.css">
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -40,123 +39,306 @@
   <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- Hero -->
-  <section class="hero-mini" style="position: relative; padding-top: calc(var(--navbar-height, 72px) + 2rem); padding-bottom: 3rem; background: linear-gradient(135deg, #2d1b12 0%, #1a0e08 50%, #0d0d0d 100%); min-height: auto; text-align: center; display: flex; align-items: center; justify-content: center;">
+  <section class="hero-mini" style="position: relative; padding-top: calc(var(--navbar-height, 72px) + 2rem); padding-bottom: 3rem; background: url('../../images/river.jpg') center/cover no-repeat; min-height: auto; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div class="hero-content" style="margin-left: 0; max-width: 800px; width: 90%;">
-      <span class="hero-subtitle" style="display: block;">EXPLORE ALAPPUZHA</span>
+      <span class="hero-subtitle" style="display: block; color: var(--clr-gold); letter-spacing: 2px;">EXPLORE ALAPPUZHA</span>
       <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Places to Visit</h1>
     </div>
   </section>
 
-  <!-- Places Section -->
-  <section class="section section-dark">
-    <div class="section-header">
-      <h2>Popular Destinations</h2>
-      <div class="accent-line"></div>
-      <p>Discover the most beautiful and culturally rich destinations in and around Alappuzha</p>
-    </div>
-    <div class="card-grid stagger-children">
-      <!-- Card 1 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Alappuzha Beach</h3>
-          <p>A popular beach with an old sea bridge, lighthouse, and beautiful sunset views. Perfect for evening walks.</p>
-          <span class="card-tag">Beach</span>
-        </div>
+  <!-- Section 1: A Beautiful Place Near to Our Campus -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>A Beautiful Place Near to Our Campus</h2>
       </div>
-      <!-- Card 2 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Backwater Cruise</h3>
-          <p>Experience the famous Kerala backwaters on a traditional houseboat. A must-do experience in Alappuzha.</p>
-          <span class="card-tag">Backwaters</span>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A serene and picturesque location just a short distance from campus, perfect for a quick escape into nature.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'A Beautiful Place Near to Our Campus')">
+          <img src="../../images/places%20to%20visit/A%20beautiful%20place%20near%20to%20our%20campus/WhatsApp%20Image%202026-08-02%20at%201.32.17%20PM.jpeg" alt="A Beautiful Place Near to Our Campus 1" loading="lazy">
         </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Marari Beach</h3>
-          <p>A pristine, unspoiled beach about 11 km north. Known for its serene beauty and fishing village charm.</p>
-          <span class="card-tag">Beach</span>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Pathiramanal Island</h3>
-          <p>A small island in Vembanad Lake accessible only by boat. Home to rare migratory birds.</p>
-          <span class="card-tag">Nature</span>
-        </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Krishnapuram Palace</h3>
-          <p>An 18th-century palace showcasing Kerala architecture with a famous Gajendra Moksham mural.</p>
-          <span class="card-tag">Heritage</span>
-        </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="card">
-        <div class="card-img-placeholder"></div>
-        <div class="card-body">
-          <h3>Revi Karunakaran Museum</h3>
-          <p>Houses an extensive collection of art, antiques, crystals, and Swarovski pieces.</p>
-          <span class="card-tag">Museum</span>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'A Beautiful Place Near to Our Campus')">
+          <img src="../../images/places%20to%20visit/A%20beautiful%20place%20near%20to%20our%20campus/WhatsApp%20Image%202026-08-02%20at%201.32.18%20PM.jpeg" alt="A Beautiful Place Near to Our Campus 2" loading="lazy">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Section 2: Alappuzha Beach -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Alappuzha Beach</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A popular beach with an old sea bridge, lighthouse, and beautiful sunset views. Perfect for evening walks and relaxation.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Alappuzha Beach')">
+          <img src="../../images/places%20to%20visit/Alappuzha%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.16%20PM%20(1).jpeg" alt="Alappuzha Beach 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Alappuzha Beach')">
+          <img src="../../images/places%20to%20visit/Alappuzha%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.16%20PM.jpeg" alt="Alappuzha Beach 2" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Alappuzha Lighthouse -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Alappuzha Lighthouse</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A historic lighthouse offering panoramic views of the Arabian Sea and the city. One of the oldest lighthouses on the Kerala coast.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Alappuzha Lighthouse')">
+          <img src="../../images/places%20to%20visit/Alappuzha%20Lighthouse/WhatsApp%20Image%202026-08-02%20at%201.32.08%20PM.jpeg" alt="Alappuzha Lighthouse" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Kainakary -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kainakary</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A charming village in the Kuttanad region known for its paddy fields, backwater canals, and traditional way of life.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Kainakary')">
+          <img src="../../images/places%20to%20visit/Kainakary/WhatsApp%20Image%202026-08-02%20at%201.32.14%20PM%20(1).jpeg" alt="Kainakary 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Kainakary')">
+          <img src="../../images/places%20to%20visit/Kainakary/WhatsApp%20Image%202026-08-02%20at%201.32.14%20PM.jpeg" alt="Kainakary 2" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Krishnapuram Palace -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Krishnapuram Palace</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">An 18th-century palace showcasing Kerala architecture with the famous Gajendra Moksham mural, one of the largest mural paintings in Kerala.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Krishnapuram Palace')">
+          <img src="../../images/places%20to%20visit/Krishnapuram%20Palace/WhatsApp%20Image%202026-08-02%20at%201.32.14%20PM.jpeg" alt="Krishnapuram Palace 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Krishnapuram Palace')">
+          <img src="../../images/places%20to%20visit/Krishnapuram%20Palace/WhatsApp%20Image%202026-08-02%20at%201.32.15%20PM%20(1).jpeg" alt="Krishnapuram Palace 2" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Krishnapuram Palace')">
+          <img src="../../images/places%20to%20visit/Krishnapuram%20Palace/WhatsApp%20Image%202026-08-02%20at%201.32.15%20PM.jpeg" alt="Krishnapuram Palace 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Kumarakom Bird Sanctuary -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kumarakom Bird Sanctuary</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A haven for birdwatchers, home to numerous species of migratory and local birds set amidst the backwaters of Vembanad Lake.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Kumarakom Bird Sanctuary')">
+          <img src="../../images/places%20to%20visit/Kumarakom%20bird%20sanctuary/WhatsApp%20Image%202026-08-02%20at%201.32.10%20PM.jpeg" alt="Kumarakom Bird Sanctuary" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Kuttanad -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kuttanad</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">The 'Rice Bowl of Kerala' - a region of lush paddy fields below sea level, crisscrossed by canals, rivers, and lakes.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Kuttanad')">
+          <img src="../../images/places%20to%20visit/Kuttanad/WhatsApp%20Image%202026-08-02%20at%201.32.18%20PM%20(1).jpeg" alt="Kuttanad 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Kuttanad')">
+          <img src="../../images/places%20to%20visit/Kuttanad/WhatsApp%20Image%202026-08-02%20at%201.32.18%20PM.jpeg" alt="Kuttanad 2" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Marari Beach -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Marari Beach</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A pristine, unspoiled beach about 11 km north of Alappuzha. Known for its serene beauty, clean sands, and fishing village charm.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Marari Beach')">
+          <img src="../../images/places%20to%20visit/Marari%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.07%20PM.jpeg" alt="Marari Beach" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: Pathiramanal Island -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pathiramanal Island</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A small island in Vembanad Lake accessible only by boat. Home to rare migratory birds and a perfect spot for nature lovers.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Pathiramanal Island')">
+          <img src="../../images/places%20to%20visit/Pathiramanal%20island/WhatsApp%20Image%202026-08-02%20at%201.32.10%20PM.jpeg" alt="Pathiramanal Island" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: Punamada Kayal -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Punamada Kayal</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A scenic backwater stretch famous for the annual Nehru Trophy Boat Race. Offers houseboat cruises and stunning sunset views.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Punamada Kayal')">
+          <img src="../../images/places%20to%20visit/Punamada%20kayal/WhatsApp%20Image%202026-08-02%20at%201.32.09%20PM.jpeg" alt="Punamada Kayal" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 11: Punnapra Beach -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Punnapra Beach</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A quiet beach known for its historical significance in the Punnapra-Vayalar uprising. Ideal for peaceful walks and sunrise views.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Punnapra Beach')">
+          <img src="../../images/places%20to%20visit/Punnapra%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.16%20PM.jpeg" alt="Punnapra Beach 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Punnapra Beach')">
+          <img src="../../images/places%20to%20visit/Punnapra%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.17%20PM.jpeg" alt="Punnapra Beach 2" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 12: Ravikarunakaran Museum -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ravikarunakaran Museum</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">Houses an extensive collection of art, antiques, crystals, Swarovski pieces, and rare artifacts from around the world.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Ravikarunakaran Museum')">
+          <img src="../../images/places%20to%20visit/Ravikarunakaran%20Museum/WhatsApp%20Image%202026-08-02%20at%201.32.13%20PM%20(1).jpeg" alt="Ravikarunakaran Museum 1" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Ravikarunakaran Museum')">
+          <img src="../../images/places%20to%20visit/Ravikarunakaran%20Museum/WhatsApp%20Image%202026-08-02%20at%201.32.13%20PM%20(2).jpeg" alt="Ravikarunakaran Museum 2" loading="lazy">
+        </div>
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Ravikarunakaran Museum')">
+          <img src="../../images/places%20to%20visit/Ravikarunakaran%20Museum/WhatsApp%20Image%202026-08-02%20at%201.32.13%20PM.jpeg" alt="Ravikarunakaran Museum 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 13: Thottappally Spillway -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Thottappally Spillway</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A major spillway regulating water flow between the backwaters and the sea. Offers beautiful views of the water gates and surrounding landscape.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Thottappally Spillway')">
+          <img src="../../images/places%20to%20visit/Thottappally%20spillway/WhatsApp%20Image%202026-08-02%20at%201.32.12%20PM.jpeg" alt="Thottappally Spillway" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 14: Vandanam Beach -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Vandanam Beach</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">A lesser-known beach near the campus, offering a peaceful retreat with gentle waves and a relaxed atmosphere.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Vandanam Beach')">
+          <img src="../../images/places%20to%20visit/Vandanam%20beach/WhatsApp%20Image%202026-08-02%20at%201.32.12%20PM.jpeg" alt="Vandanam Beach" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 15: Vembanad Lake -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Vembanad Lake</h2>
+      </div>
+      <p style="max-width: 900px; margin: 0 auto 2rem; text-align: center; color: var(--clr-text-muted);">The longest lake in India and the largest in Kerala. A vast network of backwaters perfect for houseboat cruises, birdwatching, and experiencing Kerala's aquatic life.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal(this.querySelector('img').src, 'Vembanad Lake')">
+          <img src="../../images/places%20to%20visit/Vembanad%20Lake/WhatsApp%20Image%202026-08-02%20at%201.32.09%20PM.jpeg" alt="Vembanad Lake" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox for Selected Photo -->
+  <div id="imageModal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;">
+    <span onclick="closeModal()" style="position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;">&times;</span>
+    <img id="modalImg" src="" alt="Enlarged view" style="max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);">
+    <p id="modalCaption" style="color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;"></p>
+  </div>
+
+  <script>
+    function openModal(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').innerText = caption;
+      document.getElementById('imageModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <h4>TD Medical College</h4>
-        <p>A premier institution of medical education in Alappuzha, Kerala, committed to excellence in healthcare education and compassionate medicine since its establishment.</p>
-        <div class="footer-social"><a href="https://www.instagram.com/sfi_tdmc?igsh=MXFweXFqNnQ1c2s3cA=="target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+        <p>A premier institution of medical education in Alappuzha, Kerala.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
         <div class="footer-links">
           <a href="../../index.html">Home</a>
-          <a href="../campus/index.html">Campus</a>
-          <a href="../hostel/index.html">Hostel</a>
-          <a href="../academics/index.html">Academics</a>
-          <a href="../contact.html">Contact</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <div class="footer-links">
-          <a href="../explore/index.html">Explore Alappuzha</a>
-          <a href="../explore/places.html">Places to Visit</a>
-          <a href="../explore/miscellaneous.html">Miscellaneous</a>
-          <a href="../explore/temples.html">Temples</a>
-          <a href="../explore/churches.html">Churches</a>
-          <a href="../explore/mosques.html">Mosques</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <div class="footer-contact-list">
-          <div class="footer-contact-item">
-            <span class="fci-icon"><i class="fa-solid fa-location-dot"></i></span>
-            <span>Vandanam, Alappuzha,<br>Kerala 688005</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="fci-icon"><i class="fa-solid fa-phone"></i></span>
-            <span>0477-2282611</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="fci-icon"><i class="fa-solid fa-envelope"></i></span>
-            <span>tdmcalappuzha@gmail.com</span>
-          </div>
+          <a href="../../pages/campus/index.html">Campus</a>
+          <a href="../../pages/hostel/index.html">Hostel</a>
+          <a href="../../pages/academics/index.html">Academics</a>
+          <a href="../../pages/contact.html">Contact</a>
         </div>
       </div>
     </div>
