@@ -13,7 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../../css/navbar.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/footer.css">
@@ -33,7 +32,7 @@
     </a>
     <div class="nav-links" id="navLinks">
       <a href="../../index.html">Home</a>
-      <a href="../campus/index.html" class="active">Campus</a>
+      <a href="index.html" class="active">Campus</a>
       <a href="../hostel/index.html">Hostel</a>
       <a href="../academics/index.html">Academics</a>
       <a href="../explore/index.html">Explore</a>
@@ -48,12 +47,10 @@
   <!-- Hero -->
   <section class="hero-mini">
     <img src="../../images/campus/WhatsApp Image 2026-07-31 at 12.29.22 AM (12).jpg" alt="TD Medical College Campus" onerror="this.style.display='none'">
-    <div class="hero-mini-content">
-      <center>
-        <span class="hero-subtitle">CAMPUS TOUR</span>
-        <h1>Our Campus</h1>
-        <p>Explore the heritage campus of TD Medical College</p>
-      </center>
+    <div class="hero-mini-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center;">
+      <span class="hero-subtitle">CAMPUS TOUR</span>
+      <h1>Our Campus</h1>
+      <p>Explore the heritage campus of TD Medical College</p>
     </div>
   </section>
 
@@ -94,7 +91,7 @@
           <div class="facility-icon">
             <i class="fa-solid fa-book"></i>
           </div>
-          <h3>Library</h3>
+          <h3>Library and Study Hall</h3>
         </a>
         <a href="auditorium.html" class="facility-item"
           style="text-decoration: none; color: inherit; display: block; cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease; flex: 1 1 260px; max-width: 320px;">
@@ -115,7 +112,7 @@
           <div class="facility-icon">
             <i class="fa-solid fa-heart-pulse"></i>
           </div>
-          <h3>Wellness Center</h3>
+          <h3>Wellness Center and Pysical Fitness center</h3>
         </a>
         <a href="cafeteria.html" class="facility-item"
           style="text-decoration: none; color: inherit; display: block; cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease; flex: 1 1 260px; max-width: 320px;">
@@ -130,182 +127,94 @@
 
   
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Campus Gallery</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_main' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.22%20AM%20(10).jpeg' alt='Campus image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_main" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM.jpeg" alt="Campus image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.25%20AM.jpeg' alt='Campus image 12'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.33%20PM.jpeg" alt="Campus image 2"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.33%20PM.jpeg' alt='Campus image 16'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM%20(1).jpeg" alt="Campus image 3"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.34%20PM.jpeg' alt='Campus image 17'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(1).jpeg" alt="Campus image 4"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM%20(1).jpeg' alt='Campus image 27'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM.jpeg" alt="Campus image 5"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM.jpeg' alt='Campus image 28'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(1).jpeg" alt="Campus image 6"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(1).jpeg' alt='Campus image 29'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.34%20PM.jpeg" alt="Campus image 7"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(2).jpeg' alt='Campus image 30'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM.jpeg" alt="Campus image 8"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM.jpeg' alt='Campus image 31'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(1).jpeg' alt='Campus image 32'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(2).jpeg' alt='Campus image 33'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM.jpeg' alt='Campus image 34'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM%20(1).jpeg' alt='Campus image 35'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM%20(2).jpeg' alt='Campus image 36'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM.jpeg' alt='Campus image 37'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.34%20AM.jpeg' alt='Campus image 38'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.36%20AM%20(1).jpeg' alt='Campus image 39'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.36%20AM.jpeg' alt='Campus image 40'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
-          </div>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.37%20AM.jpeg' alt='Campus image 41'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Campus\')">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.22%20AM%20(10).jpeg" alt="Campus image 9"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Campus')">
           </div>
         </div>
-        <button onclick='moveSlide_main(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_main(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_main(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_main(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.22%20AM%20(10).jpeg' class='thumb-item_main' onclick='goToSlide_main(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.25%20AM.jpeg' class='thumb-item_main' onclick='goToSlide_main(11)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.33%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(15)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.34%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(16)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.35%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(17)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.35%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(18)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.36%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(19)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.36%20PM%20(2).jpeg' class='thumb-item_main' onclick='goToSlide_main(20)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.36%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(21)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.37%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(22)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.37%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(23)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.38%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(24)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.38%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(25)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(26)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(27)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(28)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(2).jpeg' class='thumb-item_main' onclick='goToSlide_main(29)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(30)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(31)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(2).jpeg' class='thumb-item_main' onclick='goToSlide_main(32)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(33)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(34)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM%20(2).jpeg' class='thumb-item_main' onclick='goToSlide_main(35)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.42%20PM.jpeg' class='thumb-item_main' onclick='goToSlide_main(36)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.34%20AM.jpeg' class='thumb-item_main' onclick='goToSlide_main(37)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.36%20AM%20(1).jpeg' class='thumb-item_main' onclick='goToSlide_main(38)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.36%20AM.jpeg' class='thumb-item_main' onclick='goToSlide_main(39)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
-        <img src='../../images/campus/WhatsApp%20Image%202026-08-02%20at%207.38.37%20AM.jpeg' class='thumb-item_main' onclick='goToSlide_main(40)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM.jpeg" class="thumb-item_main" onclick="goToSlide_main(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.33%20PM.jpeg" class="thumb-item_main" onclick="goToSlide_main(1)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM%20(1).jpeg" class="thumb-item_main" onclick="goToSlide_main(2)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.41%20PM%20(1).jpeg" class="thumb-item_main" onclick="goToSlide_main(3)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM.jpeg" class="thumb-item_main" onclick="goToSlide_main(4)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.40%20PM%20(1).jpeg" class="thumb-item_main" onclick="goToSlide_main(5)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.34%20PM.jpeg" class="thumb-item_main" onclick="goToSlide_main(6)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-08-02%20at%201.22.39%20PM.jpeg" class="thumb-item_main" onclick="goToSlide_main(7)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
+        <img src="../../images/campus/WhatsApp%20Image%202026-07-31%20at%2012.29.22%20AM%20(10).jpeg" class="thumb-item_main" onclick="goToSlide_main(8)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
   <script>
     let currentSlide_main = 0;
-    const totalSlides_main = 41;
+    const totalSlides_main = 9;
     function updateCarousel_main() {
       const track = document.getElementById('carouselTrack_main');
       if(track) track.style.transform = `translateX(-${currentSlide_main * 100}%)`;
@@ -332,13 +241,13 @@
 
 
   <!-- Modal Lightbox for Selected Photo -->
-  <div id='imageModal'
-    style='display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;'>
-    <span onclick='closeModal()'
-      style='position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;'>&times;</span>
-    <img id='modalImg' src='' alt='Enlarged view'
-      style='max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);'>
-    <p id='modalCaption' style='color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;'></p>
+  <div id="imageModal"
+    style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;">
+    <span onclick="closeModal()"
+      style="position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;">&times;</span>
+    <img id="modalImg" src="" alt="Enlarged view"
+      style="max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);">
+    <p id="modalCaption" style="color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;"></p>
   </div>
   <script>
     function openModal(src, caption) {
@@ -366,7 +275,7 @@
         <h4>Quick Links</h4>
         <div class="footer-links">
           <a href="../../index.html">Home</a>
-          <a href="../campus/index.html">Campus</a>
+          <a href="index.html">Campus</a>
           <a href="../hostel/index.html">Hostel</a>
           <a href="../academics/index.html">Academics</a>
           <a href="../contact.html">Contact</a>

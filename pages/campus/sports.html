@@ -27,11 +27,11 @@
     </a>
     <div class="nav-links" id="navLinks">
       <a href="../../index.html">Home</a>
-      <a href="campus/index.html" class="active">Campus</a>
-      <a href="hostel/index.html">Hostel</a>
-      <a href="academics/index.html">Academics</a>
-      <a href="explore/index.html">Explore</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active">Campus</a>
+      <a href="../hostel/index.html">Hostel</a>
+      <a href="../academics/index.html">Academics</a>
+      <a href="../explore/index.html">Explore</a>
+      <a href="../contact.html">Contact</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -52,7 +52,7 @@
   <section class="section section-dark">
     <div class="container">
       <div style="margin-bottom: 2rem;">
-        <a href="campus/index.html" style="color: var(--clr-gold); text-decoration: none; font-weight: 500;"><i class="fa-solid fa-arrow-left" style="margin-right: 6px;"></i> Back to Campus</a>
+        <a href="index.html" style="color: var(--clr-gold); text-decoration: none; font-weight: 500;"><i class="fa-solid fa-arrow-left" style="margin-right: 6px;"></i> Back to Campus</a>
       </div>
 
       <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center;">
@@ -84,32 +84,32 @@
 
   
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Overview</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_root' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/WhatsApp%20Image%202026-08-02%20at%201.52.18%20PM.jpeg' alt='Overview image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'Overview\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_root" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/WhatsApp%20Image%202026-08-02%20at%201.52.18%20PM.jpeg" alt="Overview"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Overview')">
           </div>
         </div>
-        <button onclick='moveSlide_root(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_root(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_root(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_root(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/WhatsApp%20Image%202026-08-02%20at%201.52.18%20PM.jpeg' class='thumb-item_root' onclick='goToSlide_root(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/WhatsApp%20Image%202026-08-02%20at%201.52.18%20PM.jpeg" class="thumb-item_root" onclick="goToSlide_root(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -141,32 +141,32 @@
   </script>
 
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Badminton</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_sub0' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/badminton/WhatsApp%20Image%202026-08-02%20at%201.53.20%20PM.jpeg' alt='badminton image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'badminton\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub0" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/badminton/WhatsApp%20Image%202026-08-02%20at%201.53.20%20PM.jpeg" alt="Badminton view"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Badminton')">
           </div>
         </div>
-        <button onclick='moveSlide_sub0(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_sub0(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_sub0(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_sub0(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/badminton/WhatsApp%20Image%202026-08-02%20at%201.53.20%20PM.jpeg' class='thumb-item_sub0' onclick='goToSlide_sub0(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/badminton/WhatsApp%20Image%202026-08-02%20at%201.53.20%20PM.jpeg" class="thumb-item_sub0" onclick="goToSlide_sub0(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -198,32 +198,32 @@
   </script>
 
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Cricket</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_sub1' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/cricket/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM%20(1).jpeg' alt='cricket image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'cricket\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub1" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/cricket/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM%20(1).jpeg" alt="Cricket view"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Cricket')">
           </div>
         </div>
-        <button onclick='moveSlide_sub1(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_sub1(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_sub1(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_sub1(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/cricket/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM%20(1).jpeg' class='thumb-item_sub1' onclick='goToSlide_sub1(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/cricket/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM%20(1).jpeg" class="thumb-item_sub1" onclick="goToSlide_sub1(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -255,32 +255,32 @@
   </script>
 
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Football</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_sub2' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/football/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM.jpeg' alt='football image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'football\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub2" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/football/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM.jpeg" alt="Football view"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Football')">
           </div>
         </div>
-        <button onclick='moveSlide_sub2(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_sub2(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_sub2(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_sub2(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/football/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM.jpeg' class='thumb-item_sub2' onclick='goToSlide_sub2(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/football/WhatsApp%20Image%202026-08-02%20at%201.53.29%20PM.jpeg" class="thumb-item_sub2" onclick="goToSlide_sub2(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -312,32 +312,32 @@
   </script>
 
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
-        <h2>Kho kho</h2>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kho Kho</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_sub3' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/kho kho/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM%20(1).jpeg' alt='kho kho image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'kho kho\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub3" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/kho%20kho/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM%20(1).jpeg" alt="Kho Kho view"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Kho Kho')">
           </div>
         </div>
-        <button onclick='moveSlide_sub3(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_sub3(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_sub3(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_sub3(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/kho kho/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM%20(1).jpeg' class='thumb-item_sub3' onclick='goToSlide_sub3(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/kho%20kho/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM%20(1).jpeg" class="thumb-item_sub3" onclick="goToSlide_sub3(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -369,32 +369,32 @@
   </script>
 
   <!-- Gallery Slider & Lightbox -->
-  <section class='section'>
-    <div class='container'>
-      <div class='section-header'>
-        <h2>Volly ball</h2>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Volleyball</h2>
       </div>
-      <div style='max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);'>
-        <div id='carouselTrack_sub4' style='display: flex; transition: transform 0.4s ease-in-out; width: 100%;'>
-          <div style='min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;'>
-            <img src='../../images/sports/volly ball/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM.jpeg' alt='volly ball image 1'
-              style='width: 100%; height: 100%; object-fit: cover; cursor: pointer;'
-              onclick="openModal(this.src, \'volly ball\')">
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub4" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/sports/volly%20ball/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM.jpeg" alt="Volleyball view"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'Volleyball')">
           </div>
         </div>
-        <button onclick='moveSlide_sub4(-1)' aria-label='Previous Slide'
-          style='position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-left'></i>
+        <button onclick="moveSlide_sub4(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick='moveSlide_sub4(1)' aria-label='Next Slide'
-          style='position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;'>
-          <i class='fa-solid fa-chevron-right'></i>
+        <button onclick="moveSlide_sub4(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
       
-      <div style='max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;'>
-        <img src='../../images/sports/volly ball/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM.jpeg' class='thumb-item_sub4' onclick='goToSlide_sub4(0)'
-          style='width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;'>
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/sports/volly%20ball/WhatsApp%20Image%202026-08-02%20at%201.53.28%20PM.jpeg" class="thumb-item_sub4" onclick="goToSlide_sub4(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
       </div>
     </div>
   </section>
@@ -427,13 +427,13 @@
 
 
   <!-- Modal Lightbox for Selected Photo -->
-  <div id='imageModal'
-    style='display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;'>
-    <span onclick='closeModal()'
-      style='position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;'>&times;</span>
-    <img id='modalImg' src='' alt='Enlarged view'
-      style='max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);'>
-    <p id='modalCaption' style='color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;'></p>
+  <div id="imageModal"
+    style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;">
+    <span onclick="closeModal()"
+      style="position: absolute; top: 20px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer;">&times;</span>
+    <img id="modalImg" src="" alt="Enlarged view"
+      style="max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);">
+    <p id="modalCaption" style="color: var(--clr-gold); margin-top: 15px; font-size: 1.1rem; text-align: center;"></p>
   </div>
   <script>
     function openModal(src, caption) {
@@ -457,10 +457,10 @@
         <h4>Quick Links</h4>
         <div class="footer-links">
           <a href="../../index.html">Home</a>
-          <a href="campus/index.html">Campus</a>
-          <a href="hostel/index.html">Hostel</a>
-          <a href="academics/index.html">Academics</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html">Campus</a>
+          <a href="../hostel/index.html">Hostel</a>
+          <a href="../academics/index.html">Academics</a>
+          <a href="../contact.html">Contact</a>
         </div>
       </div>
     </div>

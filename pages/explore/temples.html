@@ -72,153 +72,7 @@
   >
 
 
-  <style>
 
-    /* =====================================================
-       TEMPLE GALLERY
-    ====================================================== */
-
-    .temple-gallery {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, 310px);
-
-      justify-content: center;
-
-      gap: 1rem;
-
-      width: 100%;
-
-      max-width: 700px;
-
-      margin: 0 auto;
-
-    }
-
-
-    .temple-gallery .gallery-item {
-
-      width: 310px;
-
-      height: 230px;
-
-      aspect-ratio: auto;
-
-      overflow: hidden;
-
-      border-radius: 12px;
-
-      background: #111;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-    }
-
-
-    .temple-gallery .gallery-item img {
-
-      display: block;
-
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: contain !important;
-
-      object-position: center;
-
-      cursor: pointer;
-
-      transition:
-        transform 0.3s ease;
-
-    }
-
-
-    .temple-gallery
-    .gallery-item:hover
-    img {
-
-      transform: scale(1.03);
-
-    }
-
-
-    /* =====================================================
-       MOBILE
-    ====================================================== */
-
-    @media (max-width: 700px) {
-
-      .temple-gallery {
-
-        grid-template-columns: 310px;
-
-        max-width: 310px;
-
-      }
-
-    }
-
-
-    /* =====================================================
-       IMAGE MODAL
-    ====================================================== */
-
-    #imageModal {
-
-      display: none;
-
-      position: fixed;
-
-      inset: 0;
-
-      z-index: 9999;
-
-      background:
-        rgba(0, 0, 0, 0.92);
-
-      align-items: center;
-
-      justify-content: center;
-
-      flex-direction: column;
-
-      padding: 20px;
-
-    }
-
-
-    #modalImg {
-
-      max-width: 90%;
-
-      max-height: 80vh;
-
-      width: auto;
-
-      height: auto;
-
-      object-fit: contain;
-
-      border-radius: 8px;
-
-      border:
-        2px solid var(--clr-gold);
-
-      box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.8);
-
-    }
-
-
-  </style>
 
 </head>
 
@@ -432,7 +286,7 @@
 
 
 
-      <div class="temple-gallery">
+      <div class="gallery-grid">
 
 
         <div class="gallery-item">
@@ -485,7 +339,7 @@
 
 
 
-      <div class="temple-gallery">
+      <div class="gallery-grid">
 
 
         <!-- IMAGE 1 -->
@@ -595,7 +449,7 @@
 
 
 
-      <div class="temple-gallery">
+      <div class="gallery-grid">
 
 
         <div class="gallery-item">
@@ -626,60 +480,40 @@
 
 
 
-  <!-- =====================================================
-       IMAGE MODAL
-  ====================================================== -->
-
-  <div id="imageModal">
-
+  <div id="imageModal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; flex-direction: column; padding: 20px;">
 
     <span
       onclick="closeModal()"
       aria-label="Close image"
       style="
         position: absolute;
-
         top: 20px;
-
         right: 30px;
-
         font-size: 2.5rem;
-
         color: #fff;
-
         cursor: pointer;
-
         z-index: 10000;
       "
     >
-
       &times;
-
     </span>
-
-
 
     <img
       id="modalImg"
       src=""
       alt="Enlarged temple image"
+      style="max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: 0 0 30px rgba(0,0,0,0.8);"
     >
-
-
 
     <p
       id="modalCaption"
       style="
         color: var(--clr-gold);
-
         margin-top: 15px;
-
         font-size: 1.1rem;
-
         text-align: center;
       "
     ></p>
-
 
   </div>
 
