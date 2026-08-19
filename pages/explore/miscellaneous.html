@@ -445,63 +445,6 @@
       updateCarousel_sub2();
     }
   </script>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha</h2>
-      </div>
-      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
-        <div id="carouselTrack_sub3" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
-          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
-            <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" alt="KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha image 1"
-              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
-              onclick="openModal(this.src, 'KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha')">
-          </div>
-        </div>
-        <button onclick="moveSlide_sub3(-1)" aria-label="Previous Slide"
-          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button onclick="moveSlide_sub3(1)" aria-label="Next Slide"
-          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-      
-      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
-        <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" class="thumb-item_sub3" onclick="goToSlide_sub3(0)"
-          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
-      </div>
-    </div>
-  </section>
-  <script>
-    let currentSlide_sub3 = 0;
-    const totalSlides_sub3 = 1;
-    function updateCarousel_sub3() {
-      const track = document.getElementById('carouselTrack_sub3');
-      if(track) track.style.transform = `translateX(-${currentSlide_sub3 * 100}%)`;
-      const thumbs = document.querySelectorAll('.thumb-item_sub3');
-      thumbs.forEach((thumb, idx) => {
-        if (idx === currentSlide_sub3) {
-          thumb.style.borderColor = 'var(--clr-gold)';
-          thumb.style.opacity = '1';
-        } else {
-          thumb.style.borderColor = 'transparent';
-          thumb.style.opacity = '0.6';
-        }
-      });
-    }
-    function moveSlide_sub3(direction) {
-      currentSlide_sub3 = (currentSlide_sub3 + direction + totalSlides_sub3) % totalSlides_sub3;
-      updateCarousel_sub3();
-    }
-    function goToSlide_sub3(index) {
-      currentSlide_sub3 = index;
-      updateCarousel_sub3();
-    }
-  </script>
-
   <section class="section">
     <div class="container">
       <div class="section-header">
@@ -957,7 +900,61 @@
       updateCarousel_sub10();
     }
   </script>
-
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Theater - Kerala State Film Development Corporation Alappuzha</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto; position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 164, 90, 0.2);">
+        <div id="carouselTrack_sub3" style="display: flex; transition: transform 0.4s ease-in-out; width: 100%;">
+          <div style="min-width: 100%; position: relative; aspect-ratio: 16/9; background: #111;">
+            <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" alt="KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha image 1"
+              style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+              onclick="openModal(this.src, 'KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha')">
+          </div>
+        </div>
+        <button onclick="moveSlide_sub3(-1)" aria-label="Previous Slide"
+          style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="moveSlide_sub3(1)" aria-label="Next Slide"
+          style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: var(--clr-gold); border: 1px solid var(--clr-gold); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 5;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto; display: flex; justify-content: center; gap: 10px; overflow-x: auto; padding: 5px;">
+        <img src="../../images/miscellaneous/KERALA STATE FILM DEVELOPMENT CORPORATION Alappuzha/WhatsApp%20Image%202026-08-02%20at%201.37.22%20PM.jpeg" class="thumb-item_sub3" onclick="goToSlide_sub3(0)"
+          style="width: 80px; height: 55px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid var(--clr-gold); opacity: 1; transition: opacity 0.2s, border-color 0.2s;">
+      </div>
+    </div>
+  </section>
+  <script>
+    let currentSlide_sub3 = 0;
+    const totalSlides_sub3 = 1;
+    function updateCarousel_sub3() {
+      const track = document.getElementById('carouselTrack_sub3');
+      if(track) track.style.transform = `translateX(-${currentSlide_sub3 * 100}%)`;
+      const thumbs = document.querySelectorAll('.thumb-item_sub3');
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentSlide_sub3) {
+          thumb.style.borderColor = 'var(--clr-gold)';
+          thumb.style.opacity = '1';
+        } else {
+          thumb.style.borderColor = 'transparent';
+          thumb.style.opacity = '0.6';
+        }
+      });
+    }
+    function moveSlide_sub3(direction) {
+      currentSlide_sub3 = (currentSlide_sub3 + direction + totalSlides_sub3) % totalSlides_sub3;
+      updateCarousel_sub3();
+    }
+    function goToSlide_sub3(index) {
+      currentSlide_sub3 = index;
+      updateCarousel_sub3();
+    }
+  </script>
   <section class="section">
     <div class="container">
       <div class="section-header">
